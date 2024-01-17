@@ -127,8 +127,10 @@ def _get_main_df():
 
 def _get_highlighted_members_dict():
     sample_df = _get_main_df().sample(3)
-    sample_dict = sample_df.to_dict("records")
-    return sample_dict
+    return {row['name']: row for row in sample_df.to_dict("records")}
+
+def resample(state):
+    state["highlighted_members_dict"] = _get_highlighted_members_dict()
 
 
 def _get_story_text():

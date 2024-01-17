@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "streamsync_version": "0.2.5"
+        "streamsync_version": "0.2.8"
     },
     "components": {
         "root": {
@@ -2817,7 +2817,7 @@
                 "options": "{\n  \"ar\": \"Argentina\",\n  \"uk\": \"United Kingdom\"\n}"
             },
             "parentId": "9c30af6d-4ee5-4782-9169-0f361d67fa76",
-            "position": 9,
+            "position": 10,
             "handlers": {
                 "ss-option-change": "update_cities"
             },
@@ -2831,7 +2831,7 @@
                 "options": "@{cities}"
             },
             "parentId": "9c30af6d-4ee5-4782-9169-0f361d67fa76",
-            "position": 10,
+            "position": 11,
             "handlers": {},
             "visible": true
         },
@@ -2867,40 +2867,64 @@
                 "passwordMode": "yes"
             },
             "parentId": "9c30af6d-4ee5-4782-9169-0f361d67fa76",
-            "position": 11,
+            "position": 12,
             "handlers": {},
             "visible": true
         },
         "c9e4e0d9-771e-47c2-863a-55ce8a98bfa5": {
             "id": "c9e4e0d9-771e-47c2-863a-55ce8a98bfa5",
             "type": "multiselectinput",
-            "parentId": "6010765e-9ac3-4570-84bf-913ae404e03a",
             "content": {
                 "label": "Default checkbox mirrored in multiselect"
             },
-            "handlers": {},
+            "parentId": "6010765e-9ac3-4570-84bf-913ae404e03a",
             "position": 6,
-            "visible": true,
+            "handlers": {},
             "binding": {
                 "eventType": "ss-options-change",
                 "stateRef": "b.default_checkbox"
-            }
+            },
+            "visible": true
         },
         "c1d1f478-3dbb-4009-94a0-9b92404348cd": {
             "id": "c1d1f478-3dbb-4009-94a0-9b92404348cd",
             "type": "selectinput",
-            "parentId": "6010765e-9ac3-4570-84bf-913ae404e03a",
             "content": {
                 "label": "Language",
                 "options": "{\n  \"en\": \"English\",\n  \"sp\": \"Spanish\",\n  \"pl\": \"Polish\"\n}"
             },
-            "handlers": {},
+            "parentId": "6010765e-9ac3-4570-84bf-913ae404e03a",
             "position": 4,
-            "visible": true,
+            "handlers": {},
             "binding": {
                 "eventType": "ss-option-change",
                 "stateRef": "b.language"
-            }
+            },
+            "visible": true
+        },
+        "h5jcafxmrcr02tiq": {
+            "id": "h5jcafxmrcr02tiq",
+            "type": "text",
+            "content": {
+                "text": "Debugging: itemId is: '@{itemId}'"
+            },
+            "parentId": "2d326b15-da90-496e-86e8-7fdd4bcbe822",
+            "position": 7,
+            "handlers": {},
+            "visible": true
+        },
+        "gu2kznu2am4zvoc3": {
+            "id": "gu2kznu2am4zvoc3",
+            "type": "button",
+            "content": {
+                "text": "Re-randomize repeater"
+            },
+            "parentId": "9c30af6d-4ee5-4782-9169-0f361d67fa76",
+            "position": 9,
+            "handlers": {
+                "ss-click": "resample"
+            },
+            "visible": true
         }
     }
 }
